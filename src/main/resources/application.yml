@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+truproxy:
+  api:
+    url: https://exercise.trunarrative.cloud/TruProxyAPI/rest
+    key: 
+
+jasypt:
+  encryptor:
+    password: changeme
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+    platform: h2
+    h2:
+      console:
+        enabled: true
+    ddl-auto: update
+  h2:
+    console:
+      enabled: true
